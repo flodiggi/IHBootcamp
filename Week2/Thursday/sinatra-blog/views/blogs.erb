@@ -1,0 +1,13 @@
+<h1>Welcome to the Blog</h1>
+<h3>Here are the blog posts:</h3>
+<% @floblog.each_with_index do |blog, index|%>
+<li><a href=<%= "/#{index}" %>><%= blog.title%></a> </li>
+<% end %>
+
+<form action="/new_post" method="POST">
+  <input type="text" name="title" placeholder="Title of the post">
+  <input type="text" name="author" placeholder="author of the post">
+  <input type="text" name="category" placeholder="category of the post">
+  <input type="text" name="text" placeholder="Text of the post">
+ <button type="submit" name="send" value="postinfo">create</button>
+</form>

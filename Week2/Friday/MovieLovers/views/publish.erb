@@ -1,0 +1,31 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <meta charset="UTF-8">
+  <title>| Movie Lovers |</title>
+</head>
+
+<body>
+  <center>
+  <h1>Movie Lovers</h1>
+  <h2> <%= @question %>
+  </h2>
+  <center>
+<div class ="content">
+<div class = "all_movies">
+<% @movies.each do |movie|%>
+<div class = "movie">
+
+<form action="/answer" method="POST">
+  <input type= "hidden" name="id" value = "<%= movie[:id] %>" />
+  <button type="submit" ><img id="<%=  movie[:id] %>" src="<%=  movie[:poster] %>"></button>
+
+
+</form>
+</div>
+<% end %>
+</div>
+</div>
+</body>
+
+</html>

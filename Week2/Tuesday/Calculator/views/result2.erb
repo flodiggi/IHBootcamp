@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Add | Online Calculator</title>
+  <link rel="stylesheet" href="/style.css" media="screen" title="Style.css" charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+<h1>Result:</h1>
+<h2 class="result"> <%= @result2 %> </h2>
+
+<a href="/">
+<div class="operation-buttons">
+<button type="button" name="backtohome"> Back to calculator</button>
+</div>
+</a>
+<br>
+<div class="save">
+<form action="/save" method="POST">
+<button type="submit" name="save_result" value="save">Save</button>
+</div>
+<div> Design copyright: Alina</div>
+<div> Checkout her Github:</div>
+<a href="https://github.com/alinawww">Alinas github</a>
+</form>
+</body>
+</html>

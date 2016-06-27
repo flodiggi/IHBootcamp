@@ -1,0 +1,10 @@
+<h2>You have finished the Movie Quiz!</h2>
+<h3>You have answered <%= @rightanswers%> answers correctly and <%= @wronganswers%> incorrectly </h3>
+
+
+<center>
+<h3> Your current keyword was "<%=@inputword%>" </h3>
+<form action="/" method="GET">
+<button type="submit" name="confirm" value="pressed">Start Again</button>
+</form>
+</center>

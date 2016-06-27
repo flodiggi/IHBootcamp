@@ -1,0 +1,32 @@
+
+<h1>Welcome to the TodoList</h1>
+<h3>Here are your todos:</h3>
+<div>(tick box to mark as complete)</div>
+<br>
+<% @todo.each do |task|%>
+<li> <%= task.content %> </li>
+<form action="/complete_task" method="POST">
+<input type="checkbox" name="id[]" value= "<%= task.id%>" placeholder="change">
+<% end %>
+<br>
+<button type="submit" name="operation" value="submitted">Submit changes</button>
+</form>
+<h3>Here are your finished tasks:</h3>
+<div>(tick box to delete)</div>
+<br>
+<% @done.each do |task|%>
+<li> <%= task.content %> </li>
+<form action="/delete_task" method="POST">
+<input type="checkbox" name="id[]" value= "<%= task.id%>" placeholder="change">
+<% end %>
+<br>
+<button type="submit" name="operation" value="submitted">Submit changes</button>
+</form>
+
+
+
+
+<br>
+<form action="/new_task" method="GET">
+  <button type="submit" name="operation" value="submitted">Create new task</button>
+</form>

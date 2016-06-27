@@ -1,0 +1,6 @@
+<body>
+<font face = "Comic sans MS" color= #45B39D>
+  <h1>Current time <%= @number %> hours ago: </h1></font>
+  <h2>  <%= Time.now - (60*60 *@number.to_i) %></h2>
+
+</body>

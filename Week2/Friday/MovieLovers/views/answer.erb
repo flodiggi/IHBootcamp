@@ -1,0 +1,20 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <meta charset="UTF-8">
+  <title>| Movie Lovers |</title>
+</head>
+
+<center>
+<h1> <%=@answer%> </h1>
+<form action="/movielovers" method="GET">
+<button type="submit" name="confirm" value="pressed">Next Question</button>
+</form>
+</center>
+
+<center>
+<h2> See final results: </h2>
+<form action="/finalresult" method="GET">
+<button type="submit" name="confirm" value="pressed">Results</button>
+</form>
+</center>
