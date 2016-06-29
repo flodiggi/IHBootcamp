@@ -1,0 +1,10 @@
+#header-image {
+  background-image: url();
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width:1200px) {
+  #header-image {
+    background-image: url();
+  }
+}

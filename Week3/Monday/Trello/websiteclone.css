@@ -1,0 +1,90 @@
+body {
+  background-image: url(https://trello-backgrounds.s3.amazonaws.com/53baf533e697a982248cd73f/4200x4200/48dbf0b5a546541e847e267a5dcd2201/shutterstock_134707556.jpg);
+  background-size: cover;
+}
+
+
+.hometourblog {
+  background: 0 0;
+border-radius: 3px;
+color: #fff;
+display: inline-block;
+font-weight: 700;
+height: 15px;
+line-height: 15px;
+margin: 0 5px 5px 0;
+padding: 8px;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.trellologo {
+width: 100px;
+height: 25px;
+margin-left: 300px;
+margin-top: 5px;
+}
+
+.Login {
+background-color: #5183de;
+border-radius: 3px;
+color: #fff;
+display: inline-block;
+font-weight: 700;
+height: 30px;
+line-height: 15px;
+margin: 0 5px 5px 0;
+padding: 8px;
+text-decoration: none;
+text-transform: uppercase;
+float: right;
+}
+
+.Signup {
+background-color: #32bb32;
+border-radius: 3px;
+color: #fff;
+display: inline-block;
+font-weight: 700;
+height: 30px;
+line-height: 15px;
+margin: 0 5px 5px 0;
+padding: 8px;
+text-decoration: none;
+text-transform: uppercase;
+float: right;
+}
+
+.icontello {
+
+}
+
+.agileboard {
+background: 0 0;
+border-radius: 3px;
+color: #fff;
+display: inline-block;
+font-weight: 700;
+font-size: 20px;
+height: 15px;
+padding-top: 10px;
+line-height: 15px;
+padding-right: 10px;
+text-decoration: none;
+}
+
+.texticons {
+  display: inline-block;
+  color: white;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.floatright {
+  float: right;
+}
+
+.boximage {
+display: block;
+margin-top: 10px;
+}

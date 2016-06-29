@@ -1,0 +1,104 @@
+
+body {
+  background-color: #F5F5F5;
+}
+
+.post {
+  width: 30%;
+  height: auto;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.whalepost {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.whalepost p {
+  padding-top: 15px;
+}
+
+.whale {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #c1bebe;
+  background-color: #57d8d2
+  ;
+}
+
+.panel-default .panel-heading {
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.panel-default .panel-heading p {
+  padding-top: 15px;
+}
+
+
+.yoshi {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  border: 2px solid #c1bebe;
+  background-color: #404048
+}
+.label-red {
+border-color: white;
+color: red;
+border: 1px solid #aaa;
+}
+
+.label-grey {
+border-color: white;
+color: #aaa;
+border: 1px solid #aaa;
+}
+
+.panel-body .topcontent i {
+  color: #dedc26;
+}
+.yellow-number {
+  color: #dedc26;
+}
+
+.middlecontent {
+  padding-top: 10px;
+}
+
+.pikachu {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #c1bebe;
+  background-color: #white;
+  ;
+}
+
+.panel-body .likesection i {
+  color: red;
+}
+
+
+
+.bottomcontent {
+  padding-top: 10px;
+}
+
+.commentbutton {
+  color: #2889D8;
+background-color: white;
+border: 2px #2889D8 solid;
+  border-radius: 20px;
+}
+
+@media(max-width:684px){
+  
+}

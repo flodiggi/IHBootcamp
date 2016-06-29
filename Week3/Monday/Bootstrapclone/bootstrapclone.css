@@ -1,0 +1,86 @@
+.start {
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase
+
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+
+header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  background-position: center;
+  background-image: url(header.jpg);
+  text-align: center;
+  color: white;
+}
+
+header .header-content {
+    position: relative;
+    text-align: center;
+    padding: 100px 15px 100px;
+    width: 100%;}
+
+hr {
+    border-color: #f05f40;
+    border-width: 3px;
+    max-width: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.btn {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    border: none;
+    border-radius: 300px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+}
+
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #f05f40;
+    border-color: #f05f40;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.header-content .header-content-inner p {
+    font-size: 18px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+.container-two {
+
+}
+
+.container-three {
+
+}
+
+.container-four {
+
+}
+
+.container-five {
+
+}
+
+.container-six {
+
+}

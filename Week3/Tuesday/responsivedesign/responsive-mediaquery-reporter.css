@@ -1,0 +1,16 @@
+#header-image {
+  background-image: url();
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width:1200px) {
+  #header-image {
+    background-image: url();
+  }
+}
+
+@media only screen and ( in-width: 1024px) {
+  body:after {
+    content: "1024 and up"
+  }
+}

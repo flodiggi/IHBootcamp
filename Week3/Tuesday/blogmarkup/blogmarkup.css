@@ -1,0 +1,61 @@
+nav {
+  background-color: rgba(195,192,203,0.25);
+
+}
+
+.brand {
+  padding: 10px;
+  width: 100px;
+  display: inline-block;
+}
+
+ul{
+  float: right;
+  padding: 10px;
+  margin-right: 10px;
+}
+li {
+  display: inline-block;
+}
+
+
+
+.container {
+  padding: 30px 20px;
+}
+.author {
+  display: inline-block;
+}
+
+.date {
+  float: right;
+}
+
+.comments {
+  margin-top: 100px;
+}
+
+.comment {
+  display: flex;
+  padding-top: 20px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+p {
+  display: flex;
+  float: right;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.form {
+  margin-top: 80px;
+  height: auto;
+}
