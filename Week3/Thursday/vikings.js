@@ -115,7 +115,7 @@ function start() {
       fighters.push(viking);}
     })
   }
-  // boost attributes with random weapon
+  // boost attributes with randomweapon
   function getWeapon() {
     fighters.forEach(function(viking){
       viking.weapon = weapons[Math.floor(Math.random() * 3) + 1]
