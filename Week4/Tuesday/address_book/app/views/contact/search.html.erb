@@ -1,0 +1,8 @@
+<h1>Here are your search results for contacts starting with <%= @letter %>:</h1>
+
+<ul>
+  <% @result.each do |contact| %>
+  <li><%= contact.name %> - <%= contact.address %>- <%= contact.phonenumber %>- <%= contact.email %></li>
+  <% end %>
+</ul>
+<%= link_to 'contacts', "/contacts" %>

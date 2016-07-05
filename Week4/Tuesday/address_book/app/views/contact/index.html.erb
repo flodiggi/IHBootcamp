@@ -1,0 +1,20 @@
+<ul>
+  <% @contacts.each do |contact| %>
+  <li><%= contact.name %> - <%= contact.address %>- <%= contact.phonenumber %>- <%= contact.email %></li>
+  <%= link_to "Show #{contact.name}\'s profile", "/show/#{contact.id}"  %>
+  <%= link_to "Mark #{contact.name} as favorite", "/favorite/#{contact.id}"  %>
+
+
+  <% end %>
+</ul>
+
+<form action="/search" method="post">
+  <input type="text" name="contact[letter]" value="" placeholder="Type in one letter">
+  <button type="submit">Search for starting letter</button>
+  <input type="hidden" name="authenticity_token"
+     value="<%= form_authenticity_token %>">
+
+</form>
+
+
+<%= link_to 'Add new contact', "/contactnew" %>
