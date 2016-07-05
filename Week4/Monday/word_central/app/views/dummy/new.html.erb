@@ -1,0 +1,12 @@
+<form action="/dummy" method="post">
+  Number of words or paragraphs:<br>
+  <input type="number" name="number[user_input]"><br>
+  <select id="type" name="type">
+  <option value="words">Words</option>
+  <option value="paragraphs">Paragraphs</option>
+  </select>
+  <button type="submit">Generate text</button>
+
+  <input type="hidden" name="authenticity_token"
+     value="<%= form_authenticity_token %>">
+</form>

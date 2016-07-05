@@ -1,0 +1,21 @@
+<h2>Your input:</h2>
+<h1>"<%=@text %>"</h1>
+<h2>Your word count is:</h2>
+<h1><%=@word_count %></h1>
+<h2>Your reading time is:</h2>
+<h1><%=@word_count*(60.0/275.0) %> seconds</h1>
+<h2>Your 10 most frequent used words are:</h2>
+<h3>Word | Count</h3>
+<% count = 0%>
+
+<h1> <% @counter.each do |item| %>
+  <% if  count < 10 %>
+    <h2> <%= count +1%>. &nbsp<%= item[0] %> | <%= item[1] %> </h2>
+    <% count += 1%>
+    <% end %>
+    <% end %>
+</h1>
+
+
+
+<%= link_to 'home', "/home" %>

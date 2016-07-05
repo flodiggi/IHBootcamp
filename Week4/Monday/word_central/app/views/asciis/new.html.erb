@@ -1,0 +1,12 @@
+<h2>Submit text for ascii conversion</h2>
+
+<form action="/asciis" method="post">
+  <div>
+    <label for="asciis_user_input">Text</label>
+    <textarea name="asciis[user_input]" id="asciis_user_input"></textarea>
+  </div>
+
+  <button type="submit">Submit text</button>
+  <input type="hidden" name="authenticity_token"
+     value="<%= form_authenticity_token %>">
+</form>
