@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Project.create(name:"Crazy project", description: "you wont believe it")
+Project.create(name:"Crazy project", description: "you wont believe it").time_entries.create(hours: 1)
 Project.create(name:"Time tracking app")
 Project.create(name:"Recipees", description: "for all the foodies")
 Project.create(name:"Crazy project1", description: "you wont believe it1")
