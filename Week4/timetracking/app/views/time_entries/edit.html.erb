@@ -1,8 +1,2 @@
-<%= form_for [@my_project, @my_entry] do |f| %>
+
 <%= render "form" %>
-<%= f.label :comments %>
-<%= f.text_area :comments %>
-<br>
-<%= f.submit "save" %>
-<%#= link_to "cancel", project_time_entries_path(@my_projects) %>
-<% end %>

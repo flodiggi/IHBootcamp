@@ -1,3 +1,8 @@
+<% if flash[:notice] %>
+<%= flash[:notice] %>
+<% end %>
+
+
 <h1> <%= @project.name %></h1>
 <ul>
 <% @time_entries.each do |time_entry| %>
@@ -7,7 +12,7 @@
     <p><%= time_entry.created_at %> </p>
   </li>
   <%#= link_to 'edit', "/projects/#{@project.id}/time_entries/#{time_entry.id}/edit" %>
-  <%= link_to 'edit', project_time_entry_edit_path(@project, time_entry) %> -
+  <%= link_to 'edit', edit_project_time_entry_path(@project, time_entry) %> -
   <%= link_to 'delete', project_time_entry_path(@project, time_entry), method: :delete, data: {confirm: 'are you sure?'} %>
 
 

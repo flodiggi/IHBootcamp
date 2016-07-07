@@ -41,6 +41,8 @@ def update
                       minutes: params[:time_entry][:minutes],
                       date: params[:time_entry][:date],
                       comments: params[:time_entry][:comments])
+                      flash[:notice] = "Time entry successfully updated"
+
   redirect_to action: "index", controller: "time_entries", project_id: @my_project.id
   else
   render "edit"
