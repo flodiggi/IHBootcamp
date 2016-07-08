@@ -2,6 +2,7 @@
 
  @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "movies.scss";
 
 img {
   width: 100%
@@ -29,4 +30,41 @@ img {
 h1{
   color:#AD4040;
   font-size:62;
+}
+
+.comments {
+  margin: 10px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  display: flex;
+  padding-top: 20px;
+  background-color: grey;
+}
+
+.newcomment {
+  margin: 10px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.newcomment1 {
+  margin-top: auto;
+  margin-bottom: 10px;
+   min-width: 100%;
+}
+
+
+.row {
+    flex-direction: row;
+    display: flex;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  align-items: stretch
 }
