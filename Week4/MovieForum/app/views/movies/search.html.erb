@@ -1,0 +1,25 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <meta charset="UTF-8">
+  <title>| Movie Lovers |</title>
+</head>
+
+<body>
+  <center>
+  <h1>Movie Lovers</h1>
+  <h3>Click image to start discussion</h3>
+  <center>
+<div class ="content">
+<div class = "all_movies">
+<% @movies.each do |movie|%>
+<div class = "movie">
+<a href="movies/discussion/<%= movie[:imdbid] %>"><img id="<%=  movie[:imdbid] %>" src="<%=  movie[:poster] %>"></a>
+<%= movie[:title] %>
+</div>
+<% end %>
+</div>
+</div>
+</body>
+
+</html>

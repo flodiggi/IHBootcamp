@@ -1,0 +1,31 @@
+// Place all the styles related to the movies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+img {
+  width: 100%
+}
+
+.all_movies {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: stretch;
+}
+
+.movie {
+    max-width: 28%;
+    background: #f5f5f7;
+    margin: 10px;
+    padding: 10px;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 100px;
+}
+
+h1{
+  color:#AD4040;
+  font-size:62;
+}

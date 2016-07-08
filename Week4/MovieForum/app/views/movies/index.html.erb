@@ -1,0 +1,7 @@
+<form action="/search" method="GET">
+  <input type="text" name="movies[input]" value="" placeholder="Movie">
+  <button type="submit">Search Movie</button>
+  <input type="hidden" name="authenticity_token"
+     value="<%= form_authenticity_token %>">
+
+</form>

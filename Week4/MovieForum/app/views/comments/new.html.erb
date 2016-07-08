@@ -1,0 +1,17 @@
+<h1>Write a new comment</h1>
+
+<form action="/comments" method="POST">
+  <div>
+    <label for="comment_user">Username</label>
+    <input type="text" name="contact[username]" id="comment_user">
+  </div>
+
+  <div>
+    <label for="comment_text">Text</label>
+    <textarea name="comment[text]" id="comment_text"></textarea>
+  </div>
+
+  <button type="submit">Add comment</button>
+  <input type="hidden" name="authenticity_token"
+     value="<%= form_authenticity_token %>">
+</form>
