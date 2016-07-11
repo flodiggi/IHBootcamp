@@ -8,11 +8,15 @@
   </div>
   <div class="col-md-6 flex-col">
     <div class="comments">
+      <% if @comments.empty? %>
+      <p> No comments posted yet, be the first!</p>
+      <% else%>
       <% @comments.each do |comment| %>
       <h5><%= comment.username %>: </h5>
       <div class="comment">
       <p><%= comment.text %></p>
       </div>
+      <% end %>
       <% end %>
     </div>
     <div class="newcomment">

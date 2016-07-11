@@ -4,16 +4,16 @@ class CommentsController < ApplicationController
     comment = Comment.new(
       :username => params[:comment][:username],
       :text => params[:comment][:text],)
-    comment.movie = Movie.find_by(imdbid,imdbid)
+    comment.movie = Movie.find_by(imdbid: imdbid)
 
     if
     comment.username =~ /^$/ || comment.text=~ /^$/
 
     # redirect_to("/movies/discussion/#{imdbid}")
     else
-
+    id = comment.movie_id
     comment.save!
-    @Comments = Comment.all
+    @comments = Comment.where(movie_id:id )
 
     redirect_to("/movies/discussion/#{imdbid}")
     end

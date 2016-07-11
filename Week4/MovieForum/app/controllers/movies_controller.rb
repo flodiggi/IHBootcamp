@@ -29,9 +29,16 @@ class MoviesController < ApplicationController
 
   def discuss
     movie = Imdb::Movie.new(params[:imdbid])
+    if Movie.find_by(imdbid: movie.id)
+      @movie = Movie.find_by(imdbid: movie.id)
+    else
     @movie = Movie.new(imdbid: movie.id, title: movie.title, poster: movie.poster)
     @movie.save
-    @comments = Comment.all
+    end
+
+    id = @movie.id
+    @comments = Comment.where(movie_id:id )
+
   end
 
 end
