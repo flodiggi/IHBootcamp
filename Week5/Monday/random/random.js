@@ -2,7 +2,7 @@
 $(function(){
 
 
-var max = 8000;
+var max = 10;
 for (var i = 0; i < max; i++) {
   var cell = $('<div>');
   cell.addClass('cell blue');
