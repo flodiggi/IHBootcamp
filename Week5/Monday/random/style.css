@@ -1,0 +1,14 @@
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.cell {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 1px;
+}
