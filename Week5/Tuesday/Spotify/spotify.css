@@ -1,0 +1,20 @@
+body {
+    padding: 20px;
+}
+#search-form, .form-control {
+    margin-bottom: 20px;
+}
+
+
+.pictures {
+  height: 300px;
+  width: 300px;
+}
+
+.albums {
+  height: 200px;
+  width: 200px;
+}
+.header {
+  
+}
