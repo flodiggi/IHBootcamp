@@ -1,0 +1,23 @@
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.cell {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 2px;
+}
+
+.container {
+  margin: 50px 430px;
+}
+
+.pokemon {
+  height: 50px;
+  width: 50px;
+}
