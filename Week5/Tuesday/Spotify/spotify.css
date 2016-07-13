@@ -1,10 +1,57 @@
 body {
     padding: 20px;
+    background-color: #955796;
+
 }
 #search-form, .form-control {
-    margin-bottom: 20px;
+    margin: 20px 0px;
+
 }
 
+.form-control {
+    height: 60px;
+    font-size: 30px;
+  }
+
+
+
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.btn {
+  font-size: 30px;
+  margin-left: 40%;
+}
+
+
+.intro {
+  text-align: center;
+font-size: medium;
+font-family: sans-serif;
+background-color: black;
+color: white;
+}
+
+ul {
+  padding-left: 0pt;
+  background-color: #8c8282;
+}
+
+
+.popularity {
+  font-size: x-large;
+  color: #fff;
+  font-family: sans-serif;
+  display: inline-block;
+  font-size: 50px;
+  padding-left: 100px;
+
+
+}
 
 .pictures {
   height: 300px;
@@ -16,5 +63,26 @@ body {
   width: 200px;
 }
 .header {
-  
+  font-size: x-large;
+  color: #fff;
+  font-family: sans-serif;
+  background-color: #337ab7;
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+
+.headerAlbums {
+  font-size: large;
+  color: black;
+  font-family: sans-serif;
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.headerTitles {
+
+  font-family: sans-serif;
+  list-style-type: decimal-leading-zero;
+  padding-left: 10px;
 }

@@ -8,19 +8,24 @@ var searchArtist = function (term) {
     data: {
         type: 'artist',
           q: term,
-
     },
     success: function (response) {
             $('#artists').empty()
+              console.log(response)
           $.each(response.artists.items, function(key, value){
             var header = $('<li>').text(value.name);
             var image = $('<img>').attr('src',(value.images[0].url));
+            var popularity = $('<div>').text('Popularity: '+value.popularity + '/100');
+            header.addClass('header')
+            popularity.addClass('popularity')
             image.attr('data-id',value.id)
             image.addClass('pictures')
             image.attr('data-toggle', "modal")
             image.attr('data-target', "#myModal")
+            $('.Intro').text('Click images to display albums');
             $('#artists').append(header);
             $('#artists').append(image);
+            $('#artists').append(popularity);
 
           })
     },
@@ -57,11 +62,13 @@ var searchArtist = function (term) {
                 $.each(response.items, function(key, value){
                   var header = $('<li>').text(value.name);
                   var image = $('<img>').attr('src',(value.images[0].url));
-
+                  header.addClass('headerAlbums')
                   image.attr('album-id',value.id)
                   image.addClass('albums')
                   image.attr('data-toggle', "modal")
                   image.attr('data-target', "#myModal2")
+                  $('.Intro').empty()
+                  $('.Intro').text('Click images to display tracklist');
                   $('.album').append(header);
                   $('.album').append(image);
                 })
@@ -72,7 +79,6 @@ var searchArtist = function (term) {
           error: function (err) {
             console.log('in da error');
           }
-
         })
       }
 
@@ -99,6 +105,9 @@ var searchArtist = function (term) {
                     var header = $('<a target=”_blank” >').text(value.name);
                     header.attr('href', value.preview_url)
                     list.append(header)
+                    list.addClass('headerTitles')
+                    $('.Intro').empty()
+                    $('.Intro').text('Click track to play demo');
                     $('.title').append(list);
                   })
                   $('#myModal').modal('hide')
@@ -110,7 +119,6 @@ var searchArtist = function (term) {
             error: function (err) {
               console.log('in da error');
             }
-
           })
         }
 
