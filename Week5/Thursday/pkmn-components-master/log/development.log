@@ -1,0 +1,620 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 09:27:06 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 2175ms (Views: 913.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-77d963462a71b85aa6c39f0110994006fed4301154d937da52eb3884ff813853.css?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-c1a8821f7eb1b195061d7706930814ecc6bd44db4c68f208da5fe14845fa11ea.css?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/pokemon.self-d3ba26b5552bbbce87f1320087de82e6658cf0392da397ebcf2563d0e22a063a.css?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/pokemon_api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/bootstrap.self-5afe7e91ef3675e2be97b8d060a7f3755d6dbc615b76df476df55143da70679f.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/pokemon.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/assets/pokemon_solid-webfont.woff2" for 127.0.0.1 at 2016-07-14 09:27:09 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 09:37:53 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 1358ms (Views: 474.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-14 09:37:55 +0200
+
+
+Started GET "/assets/init.self-8e8ee1febc14d8614e1f8bf6384a3641de3017fa43ad0600d643d291b14a42b1.js?body=1" for 127.0.0.1 at 2016-07-14 09:37:55 +0200
+
+
+Started GET "/assets/pokemon_solid-webfont.woff2" for 127.0.0.1 at 2016-07-14 09:37:55 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 09:58:58 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 2607ms (Views: 565.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-728dfc42e3f46057ca590685739426bf49c66bcb863d9eb76cc6e9e084a14411.js?body=1" for 127.0.0.1 at 2016-07-14 09:59:02 +0200
+
+
+Started GET "/assets/pokemon_solid-webfont.woff2" for 127.0.0.1 at 2016-07-14 09:59:02 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 09:59:45 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1930ms (Views: 301.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-d91c02e374fe2ca44cbe430d280f37ab3692f9dfdfd873610e6a01428323bff5.js?body=1" for 127.0.0.1 at 2016-07-14 09:59:47 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:00:03 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 4072ms (Views: 281.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-82604d4233e82fd6eec619f08013acd3433c964648664dc1d86d14c2437f6e86.js?body=1" for 127.0.0.1 at 2016-07-14 10:00:07 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:01:10 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 2167ms (Views: 262.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-4c5d97b9b9518df2a2128eafc83c848e8336abcd679b93e6b8814fac38fdf134.js?body=1" for 127.0.0.1 at 2016-07-14 10:01:12 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:04:01 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1509ms (Views: 274.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-cfdbda53264e9ff45219a8d300d3fe633d86403a088c692c98e9e9e69df1a05a.js?body=1" for 127.0.0.1 at 2016-07-14 10:04:02 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:04:04 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 1675ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:05:54 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 2035ms (Views: 238.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-a00d1c945044915e4e30af82039577d9a0113659e399612cf6551353f1b8152d.js?body=1" for 127.0.0.1 at 2016-07-14 10:05:56 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:05:57 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 1872ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:08:56 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1046ms (Views: 344.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-8d162eac4779a1b5d97cb89c101c2f1595344fdf8103a51c2cfc0648adeef6cb.js?body=1" for 127.0.0.1 at 2016-07-14 10:08:58 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:08:59 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 1320ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:15:59 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 2250ms (Views: 313.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-49b5e64935616d25b05dcda5006335695eff91f50b8fcf849aa91bdbc517f64d.js?body=1" for 127.0.0.1 at 2016-07-14 10:16:02 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:16:03 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 1615ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:17:06 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 1123ms (Views: 168.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:22:30 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 1344ms (Views: 329.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-f7f990f196cc95ede9b2c91332c3c4b1ec928f69013cc8342bb93657cb0f686e.js?body=1" for 127.0.0.1 at 2016-07-14 10:22:31 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:22:33 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 515ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:27:19 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 1330ms (Views: 348.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:27:20 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 1597ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-88c0efd5bf874cdac793f4fb83e04b344a7646e0e3804e9572067e6feaba718a.js?body=1" for 127.0.0.1 at 2016-07-14 10:27:22 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:27:23 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 321ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/8/" for 127.0.0.1 at 2016-07-14 10:27:33 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/8"}
+Completed 200 OK in 1977ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/9/" for 127.0.0.1 at 2016-07-14 10:27:36 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/9"}
+Completed 200 OK in 392ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/15/" for 127.0.0.1 at 2016-07-14 10:27:40 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/15"}
+Completed 200 OK in 1227ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:28:12 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 2359ms (Views: 205.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:28:17 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 3714ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/9/" for 127.0.0.1 at 2016-07-14 10:28:20 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/9"}
+Completed 200 OK in 1825ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/13/" for 127.0.0.1 at 2016-07-14 10:28:23 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/13"}
+Completed 200 OK in 3666ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:28:49 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 4352ms (Views: 159.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:28:53 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 4279ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:30:14 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 1715ms (Views: 338.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:30:16 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 500ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-c2ea1e36eebb8c994737b758b32c3d9262bd46597cc16d5a48ffe6cf50a7a557.js?body=1" for 127.0.0.1 at 2016-07-14 10:30:16 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:30:17 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 1826ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/11/" for 127.0.0.1 at 2016-07-14 10:30:26 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/11"}
+Completed 200 OK in 1196ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:30:43 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 1169ms (Views: 147.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/9/" for 127.0.0.1 at 2016-07-14 10:30:47 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/9"}
+Completed 200 OK in 524ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:31:03 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 2003ms (Views: 296.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-9e09c1f0d225afbe339f397a45a23e0755d2f3d57352bf78888dbf52b321a2de.js?body=1" for 127.0.0.1 at 2016-07-14 10:31:05 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:31:05 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 2019ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:35:27 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 2911ms (Views: 594.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-1d632f5aaf6a401f1abdcd23adc8f0382d0ac9474e270c787761486d71927f00.js?body=1" for 127.0.0.1 at 2016-07-14 10:35:30 +0200
+
+
+Started GET "/assets/pokemon_controller.self-33990e02793f7f4e4543737c4b598c5d239c5966329de948e73ce74ab335f55f.js?body=1" for 127.0.0.1 at 2016-07-14 10:35:30 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:35:44 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 2957ms (Views: 412.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-fc37f1feeb484702b55bdcfbb0a9356eb7e683f1ff866b13b1baf7cdc1b382c2.js?body=1" for 127.0.0.1 at 2016-07-14 10:35:47 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:36:07 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 2284ms (Views: 281.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_controller.self-33d3b941e6b0cd1213f8cb0b128e71bd3e28369ff3d18adaa3e79d9e25f0b1a1.js?body=1" for 127.0.0.1 at 2016-07-14 10:36:09 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:36:38 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 2036ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:37:49 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 2316ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_controller.self-86041dd3b59a9a41dc9704ff8dd1c740b1f77e6927977a7767d1f64a51c90626.js?body=1" for 127.0.0.1 at 2016-07-14 10:37:51 +0200
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-07-14 10:37:51 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:37:53 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 1348ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:39:07 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 3066ms (Views: 305.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_controller.self-e7abed73b7c85dd12f113846407563ef55afde977b2ed67185175124e8945302.js?body=1" for 127.0.0.1 at 2016-07-14 10:39:10 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:39:14 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 3121ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:39:17 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 2041ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:39:26 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 2070ms (Views: 144.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:39:47 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1867ms (Views: 276.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_controller.self-4c7d17983178204fe5cff16994c43282acade55c27621014d7241e66fb3a2505.js?body=1" for 127.0.0.1 at 2016-07-14 10:39:49 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:39:53 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 2140ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:42:06 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 1444ms (Views: 254.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_controller.self-1f6c5993fe32d8e020b6e85e5af2488cc83b6e9c9def396932ba4a21af6df0e5.js?body=1" for 127.0.0.1 at 2016-07-14 10:42:08 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:42:10 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 1338ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:44:11 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 1353ms (Views: 514.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_controller.self-64b573fe80e6eef39c987b0825edf3ee7d7f21506ec2076a9d87f4f0fe4d14ba.js?body=1" for 127.0.0.1 at 2016-07-14 10:44:12 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:44:54 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 1629ms (Views: 271.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_controller.self-7b4822d311482ba4fb0e0325556cd27ade20f769a527f4809bb28f7df5cb6c0f.js?body=1" for 127.0.0.1 at 2016-07-14 10:44:56 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:45:30 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (52.2ms)
+Completed 200 OK in 2616ms (Views: 410.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_controller.self-f42821451f910653d7d0f522a8e1ec81e38ea69ffbbbb5f3cf9c7511167ef6cd.js?body=1" for 127.0.0.1 at 2016-07-14 10:45:33 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:45:34 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 2251ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 10:45:58 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 2741ms (Views: 315.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_controller.self-2b575a8aeb9eab1356f20fe56f1e4c434a2a9093675671e1ad0c5c536551921f.js?body=1" for 127.0.0.1 at 2016-07-14 10:46:01 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 10:46:02 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 733ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 11:12:17 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 1486ms (Views: 472.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_controller.self-bfbdee8718eb837de1a4c616444b4912bfbff8d13b6a346b647c0499a51ebd03.js?body=1" for 127.0.0.1 at 2016-07-14 11:12:19 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 11:12:24 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 727ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 11:12:34 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 1224ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 12:27:48 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 35679ms (Views: 564.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 12:28:23 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 12:32:21 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 39361ms (Views: 488.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/init.self-60ac1310729ca0da19cf908c879f45ab2280f20b207d2e140e3d1a2f0f4a440d.js?body=1" for 127.0.0.1 at 2016-07-14 12:33:01 +0200
+
+
+Started GET "/assets/model.self-47beff52e1e5e303209ffecbd7a109caf10c85aaea3389091d94f56f3913ae9d.js?body=1" for 127.0.0.1 at 2016-07-14 12:33:01 +0200
+
+
+Started GET "/assets/view.self-23e78db0bf887383fd1d88a949ee25b28797f48a3631dc82338a0e9470b61ff8.js?body=1" for 127.0.0.1 at 2016-07-14 12:33:01 +0200
+
+
+Started GET "/assets/pokemon_controller.self-32ea0f4453f8659c4e50c3820e170902660ebe4a26b5decf2901a97b712c164c.js?body=1" for 127.0.0.1 at 2016-07-14 12:33:01 +0200
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-07-14 12:33:01 +0200
+
+
+Started GET "/assets/pokemon_solid-webfont.woff2" for 127.0.0.1 at 2016-07-14 12:33:01 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 12:37:25 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 4271ms (Views: 314.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/model.self-1d4d12e79a04b677510a06365699fbe9833c7a7f64eb9132dad339633b1d7873.js?body=1" for 127.0.0.1 at 2016-07-14 12:37:29 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 12:37:48 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 4473ms (Views: 335.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/model.self-0272d32a835e36d2e4d44c60764fb031029d7745481df99fd799d1ae1716ae6e.js?body=1" for 127.0.0.1 at 2016-07-14 12:37:53 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 12:38:32 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 3335ms (Views: 256.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pokemon_controller.self-d630241ccb175e2b1e805b8b6913a49509a58cab30fffdf1d46ae93e6c110a6f.js?body=1" for 127.0.0.1 at 2016-07-14 12:38:35 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 12:38:45 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 3327ms (Views: 255.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/view.self-716b4f9e6ef43b56ad7d48ee01e0917890c79200dfcac22dbc75fa78e2dfd700.js?body=1" for 127.0.0.1 at 2016-07-14 12:38:49 +0200
+
+
+Started GET "/api/v1/pokemon/23/" for 127.0.0.1 at 2016-07-14 12:38:53 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/23"}
+Completed 200 OK in 4137ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 12:40:05 +0200
+Processing by PokemonController#index as HTML
+  Rendered pokemon/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 2547ms (Views: 154.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/8/" for 127.0.0.1 at 2016-07-14 12:40:12 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/8"}
+Completed 200 OK in 1720ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/pokemon/12/" for 127.0.0.1 at 2016-07-14 12:40:17 +0200
+Processing by PokemonApiController#forward as */*
+  Parameters: {"uri"=>"pokemon/12"}
+Completed 200 OK in 1616ms (Views: 0.1ms | ActiveRecord: 0.0ms)

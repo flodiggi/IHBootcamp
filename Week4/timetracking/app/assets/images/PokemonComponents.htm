@@ -1,0 +1,3965 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>PokemonComponents</title>
+  <link rel="stylesheet" media="all" href="./PokemonComponents_files/bootstrap.self-77d963462a71b85aa6c39f0110994006fed4301154d937da52eb3884ff813853.css">
+<link rel="stylesheet" media="all" href="./PokemonComponents_files/fontawesome.self-c1a8821f7eb1b195061d7706930814ecc6bd44db4c68f208da5fe14845fa11ea.css">
+<link rel="stylesheet" media="all" href="./PokemonComponents_files/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css">
+<link rel="stylesheet" media="all" href="./PokemonComponents_files/pokemon.self-d3ba26b5552bbbce87f1320087de82e6658cf0392da397ebcf2563d0e22a063a.css">
+<link rel="stylesheet" media="all" href="./PokemonComponents_files/pokemon_api.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+<link rel="stylesheet" media="all" href="./PokemonComponents_files/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css">
+  <script src="./PokemonComponents_files/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js"></script>
+<script src="./PokemonComponents_files/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js"></script>
+<script src="./PokemonComponents_files/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js"></script>
+<script src="./PokemonComponents_files/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js"></script>
+<script src="./PokemonComponents_files/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js"></script>
+<script src="./PokemonComponents_files/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js"></script>
+<script src="./PokemonComponents_files/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js"></script>
+<script src="./PokemonComponents_files/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js"></script>
+<script src="./PokemonComponents_files/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js"></script>
+<script src="./PokemonComponents_files/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js"></script>
+<script src="./PokemonComponents_files/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js"></script>
+<script src="./PokemonComponents_files/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js"></script>
+<script src="./PokemonComponents_files/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js"></script>
+<script src="./PokemonComponents_files/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js"></script>
+<script src="./PokemonComponents_files/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js"></script>
+<script src="./PokemonComponents_files/bootstrap.self-5afe7e91ef3675e2be97b8d060a7f3755d6dbc615b76df476df55143da70679f.js"></script>
+<script src="./PokemonComponents_files/init.self-49b5e64935616d25b05dcda5006335695eff91f50b8fcf849aa91bdbc517f64d.js"></script>
+<script src="./PokemonComponents_files/pokemon.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js"></script>
+<script src="./PokemonComponents_files/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js"></script>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="2Ep6OH6W0mZ+D0kep6mXmjnPmmR4p4K2nzhTwfLXxoGzIGNxXnEvhskjZn5Nb45BmsHlxa1dDHlaH6W9PAPt7A==">
+</head>
+<body>
+
+<h1>Pokédex</h1>
+
+<!-- List of pokemon -->
+<ul class="pokedex-list">
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/23/">
+        ekans
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/8/">
+        wartortle
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/9/">
+        blastoise
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/11/">
+        metapod
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/12/">
+        butterfree
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/13/">
+        weedle
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/14/">
+        kakuna
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/15/">
+        beedrill
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/24/">
+        arbok
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/17/">
+        pidgeotto
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/18/">
+        pidgeot
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/20/">
+        raticate
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/21/">
+        spearow
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/22/">
+        fearow
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/26/">
+        raichu
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/25/">
+        pikachu
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/29/">
+        nidoran-f
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/27/">
+        sandshrew
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/30/">
+        nidorina
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/32/">
+        nidoran-m
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/34/">
+        nidoking
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/31/">
+        nidoqueen
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/37/">
+        vulpix
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/33/">
+        nidorino
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/36/">
+        clefable
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/38/">
+        ninetales
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/39/">
+        jigglypuff
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/49/">
+        venomoth
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/42/">
+        golbat
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/40/">
+        wigglytuff
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/41/">
+        zubat
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/43/">
+        oddish
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/44/">
+        gloom
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/52/">
+        meowth
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/56/">
+        mankey
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/45/">
+        vileplume
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/46/">
+        paras
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/47/">
+        parasect
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/48/">
+        venonat
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/50/">
+        diglett
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/51/">
+        dugtrio
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/53/">
+        persian
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/54/">
+        psyduck
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/55/">
+        golduck
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/58/">
+        growlithe
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/59/">
+        arcanine
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/60/">
+        poliwag
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/61/">
+        poliwhirl
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/62/">
+        poliwrath
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/63/">
+        abra
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/64/">
+        kadabra
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/66/">
+        machop
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/67/">
+        machoke
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/68/">
+        machamp
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/69/">
+        bellsprout
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/2/">
+        ivysaur
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/4/">
+        charmander
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/3/">
+        venusaur
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/19/">
+        rattata
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/5/">
+        charmeleon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/7/">
+        squirtle
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10/">
+        caterpie
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/16/">
+        pidgey
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/80/">
+        slowbro
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/78/">
+        rapidash
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/81/">
+        magnemite
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/82/">
+        magneton
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/83/">
+        farfetchd
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/84/">
+        doduo
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/93/">
+        haunter
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/87/">
+        dewgong
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/85/">
+        dodrio
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/86/">
+        seel
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/88/">
+        grimer
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/91/">
+        cloyster
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/89/">
+        muk
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/92/">
+        gastly
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/96/">
+        drowzee
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/95/">
+        onix
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/94/">
+        gengar
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/102/">
+        exeggcute
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/97/">
+        hypno
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/98/">
+        krabby
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/99/">
+        kingler
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/100/">
+        voltorb
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/101/">
+        electrode
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/103/">
+        exeggutor
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/104/">
+        cubone
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/108/">
+        lickitung
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/106/">
+        hitmonlee
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/107/">
+        hitmonchan
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/110/">
+        weezing
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/109/">
+        koffing
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/112/">
+        rhydon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/111/">
+        rhyhorn
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/113/">
+        chansey
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/114/">
+        tangela
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/115/">
+        kangaskhan
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/116/">
+        horsea
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/117/">
+        seadra
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/120/">
+        staryu
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/121/">
+        starmie
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/118/">
+        goldeen
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/122/">
+        mr-mime
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/123/">
+        scyther
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/124/">
+        jynx
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/126/">
+        magmar
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/125/">
+        electabuzz
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/127/">
+        pinsir
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/132/">
+        ditto
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/131/">
+        lapras
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/128/">
+        tauros
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/130/">
+        gyarados
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/134/">
+        vaporeon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/133/">
+        eevee
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/136/">
+        flareon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/135/">
+        jolteon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/137/">
+        porygon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/138/">
+        omanyte
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/71/">
+        victreebel
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/72/">
+        tentacool
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/73/">
+        tentacruel
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/75/">
+        graveler
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/74/">
+        geodude
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/76/">
+        golem
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/77/">
+        ponyta
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/154/">
+        meganium
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/147/">
+        dratini
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/153/">
+        bayleef
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/150/">
+        mewtwo
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/161/">
+        sentret
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/151/">
+        mew
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/152/">
+        chikorita
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/156/">
+        quilava
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/164/">
+        noctowl
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/155/">
+        cyndaquil
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/157/">
+        typhlosion
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/177/">
+        natu
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/158/">
+        totodile
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/159/">
+        croconaw
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/160/">
+        feraligatr
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/162/">
+        furret
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/163/">
+        hoothoot
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/169/">
+        crobat
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/165/">
+        ledyba
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/166/">
+        ledian
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/168/">
+        ariados
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/170/">
+        chinchou
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/171/">
+        lanturn
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/173/">
+        cleffa
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/172/">
+        pichu
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/174/">
+        igglybuff
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/176/">
+        togetic
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/175/">
+        togepi
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/178/">
+        xatu
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/179/">
+        mareep
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/181/">
+        ampharos
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/182/">
+        bellossom
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/186/">
+        politoed
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/183/">
+        marill
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/185/">
+        sudowoodo
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/184/">
+        azumarill
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/187/">
+        hoppip
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/191/">
+        sunkern
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/189/">
+        jumpluff
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/188/">
+        skiploom
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/190/">
+        aipom
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/192/">
+        sunflora
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/193/">
+        yanma
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/196/">
+        espeon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/197/">
+        umbreon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/194/">
+        wooper
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/195/">
+        quagsire
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/198/">
+        murkrow
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/200/">
+        misdreavus
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/203/">
+        girafarig
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/201/">
+        unown
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/204/">
+        pineco
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/202/">
+        wobbuffet
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/206/">
+        dunsparce
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/205/">
+        forretress
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/140/">
+        kabuto
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/207/">
+        gligar
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/142/">
+        aerodactyl
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/143/">
+        snorlax
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/144/">
+        articuno
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/145/">
+        zapdos
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/146/">
+        moltres
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/148/">
+        dragonair
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/218/">
+        slugma
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/223/">
+        remoraid
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/219/">
+        magcargo
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/224/">
+        octillery
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/225/">
+        delibird
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/226/">
+        mantine
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/229/">
+        houndoom
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/227/">
+        skarmory
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/228/">
+        houndour
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/230/">
+        kingdra
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/232/">
+        donphan
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/231/">
+        phanpy
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/233/">
+        porygon2
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/238/">
+        smoochum
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/234/">
+        stantler
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/235/">
+        smeargle
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/236/">
+        tyrogue
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/239/">
+        elekid
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/240/">
+        magby
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/241/">
+        miltank
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/244/">
+        entei
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/242/">
+        blissey
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/243/">
+        raikou
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/245/">
+        suicune
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/246/">
+        larvitar
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/247/">
+        pupitar
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/254/">
+        sceptile
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/249/">
+        lugia
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/250/">
+        ho-oh
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/251/">
+        celebi
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/252/">
+        treecko
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/253/">
+        grovyle
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/264/">
+        linoone
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/255/">
+        torchic
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/257/">
+        blaziken
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/256/">
+        combusken
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/265/">
+        wurmple
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/258/">
+        mudkip
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/259/">
+        marshtomp
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/260/">
+        swampert
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/268/">
+        cascoon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/261/">
+        poochyena
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/262/">
+        mightyena
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/266/">
+        silcoon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/267/">
+        beautifly
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/269/">
+        dustox
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/273/">
+        seedot
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/270/">
+        lotad
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/271/">
+        lombre
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/272/">
+        ludicolo
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/274/">
+        nuzleaf
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/275/">
+        shiftry
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/276/">
+        taillow
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/212/">
+        scizor
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/210/">
+        granbull
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/214/">
+        heracross
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/211/">
+        qwilfish
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/213/">
+        shuckle
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/215/">
+        sneasel
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/217/">
+        ursaring
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/286/">
+        breloom
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/285/">
+        shroomish
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/288/">
+        vigoroth
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/287/">
+        slakoth
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/294/">
+        loudred
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/299/">
+        nosepass
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/289/">
+        slaking
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/290/">
+        nincada
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/293/">
+        whismur
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/295/">
+        exploud
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/298/">
+        azurill
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/296/">
+        makuhita
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/305/">
+        lairon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/297/">
+        hariyama
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/303/">
+        mawile
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/300/">
+        skitty
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/301/">
+        delcatty
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/302/">
+        sableye
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/304/">
+        aron
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/306/">
+        aggron
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/309/">
+        electrike
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/308/">
+        medicham
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/315/">
+        roselia
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/312/">
+        minun
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/310/">
+        manectric
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/311/">
+        plusle
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/313/">
+        volbeat
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/314/">
+        illumise
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/317/">
+        swalot
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/316/">
+        gulpin
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/318/">
+        carvanha
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/319/">
+        sharpedo
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/320/">
+        wailmer
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/323/">
+        camerupt
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/324/">
+        torkoal
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/322/">
+        numel
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/325/">
+        spoink
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/328/">
+        trapinch
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/326/">
+        grumpig
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/330/">
+        flygon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/327/">
+        spinda
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/329/">
+        vibrava
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/331/">
+        cacnea
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/332/">
+        cacturne
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/333/">
+        swablu
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/340/">
+        whiscash
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/337/">
+        lunatone
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/334/">
+        altaria
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/336/">
+        seviper
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/338/">
+        solrock
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/342/">
+        crawdaunt
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/344/">
+        claydol
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/341/">
+        corphish
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/339/">
+        barboach
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/343/">
+        baltoy
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/345/">
+        lileep
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/278/">
+        wingull
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/280/">
+        ralts
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/279/">
+        pelipper
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/284/">
+        masquerain
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/283/">
+        surskit
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/281/">
+        kirlia
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/291/">
+        ninjask
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/359/">
+        absol
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/353/">
+        shuppet
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/360/">
+        wynaut
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/356/">
+        dusclops
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/358/">
+        chimecho
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/361/">
+        snorunt
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/362/">
+        glalie
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/364/">
+        sealeo
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/363/">
+        spheal
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/365/">
+        walrein
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/366/">
+        clamperl
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/367/">
+        huntail
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/368/">
+        gorebyss
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/383/">
+        groudon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/371/">
+        bagon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/372/">
+        shelgon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/369/">
+        relicanth
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/370/">
+        luvdisc
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/375/">
+        metang
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/374/">
+        beldum
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/376/">
+        metagross
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/377/">
+        regirock
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/388/">
+        grotle
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/378/">
+        regice
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/382/">
+        kyogre
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/379/">
+        registeel
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/380/">
+        latias
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/381/">
+        latios
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/384/">
+        rayquaza
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/385/">
+        jirachi
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/387/">
+        turtwig
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/389/">
+        torterra
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/403/">
+        shinx
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/390/">
+        chimchar
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/392/">
+        infernape
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/391/">
+        monferno
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/393/">
+        piplup
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/402/">
+        kricketune
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/407/">
+        roserade
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/394/">
+        prinplup
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/395/">
+        empoleon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/396/">
+        starly
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/398/">
+        staraptor
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/397/">
+        staravia
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/399/">
+        bidoof
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/401/">
+        kricketot
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/404/">
+        luxio
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/406/">
+        budew
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/405/">
+        luxray
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/408/">
+        cranidos
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/409/">
+        rampardos
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/410/">
+        shieldon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/349/">
+        feebas
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/411/">
+        bastiodon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/412/">
+        burmy
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/414/">
+        mothim
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/347/">
+        anorith
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/348/">
+        armaldo
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/352/">
+        kecleon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/354/">
+        banette
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/350/">
+        milotic
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/351/">
+        castform
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/355/">
+        duskull
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/425/">
+        drifloon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/433/">
+        chingling
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/428/">
+        lopunny
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/426/">
+        drifblim
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/427/">
+        buneary
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/430/">
+        honchkrow
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/429/">
+        mismagius
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/431/">
+        glameow
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/432/">
+        purugly
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/437/">
+        bronzong
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/434/">
+        stunky
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/435/">
+        skuntank
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/436/">
+        bronzor
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/438/">
+        bonsly
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/439/">
+        mime-jr
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/449/">
+        hippopotas
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/440/">
+        happiny
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/442/">
+        spiritomb
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/443/">
+        gible
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/444/">
+        gabite
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/445/">
+        garchomp
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/446/">
+        munchlax
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/455/">
+        carnivine
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/447/">
+        riolu
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/448/">
+        lucario
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/456/">
+        finneon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/453/">
+        croagunk
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/450/">
+        hippowdon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/452/">
+        drapion
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/454/">
+        toxicroak
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/457/">
+        lumineon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/458/">
+        mantyke
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/459/">
+        snover
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/461/">
+        weavile
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/460/">
+        abomasnow
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/464/">
+        rhyperior
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/462/">
+        magnezone
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/463/">
+        lickilicky
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/469/">
+        yanmega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/466/">
+        electivire
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/468/">
+        togekiss
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/471/">
+        glaceon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/467/">
+        magmortar
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/470/">
+        leafeon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/472/">
+        gliscor
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/473/">
+        mamoswine
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/474/">
+        porygon-z
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/475/">
+        gallade
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/476/">
+        probopass
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/477/">
+        dusknoir
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/478/">
+        froslass
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/479/">
+        rotom
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/480/">
+        uxie
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/481/">
+        mesprit
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/483/">
+        dialga
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/416/">
+        vespiquen
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/418/">
+        buizel
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/417/">
+        pachirisu
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/420/">
+        cherubi
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/419/">
+        floatzel
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/424/">
+        ambipom
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/421/">
+        cherrim
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/423/">
+        gastrodon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/491/">
+        darkrai
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/498/">
+        tepig
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/495/">
+        snivy
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/496/">
+        servine
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/497/">
+        serperior
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/499/">
+        pignite
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/501/">
+        oshawott
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/500/">
+        emboar
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/508/">
+        stoutland
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/502/">
+        dewott
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/504/">
+        patrat
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/505/">
+        watchog
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/506/">
+        lillipup
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/507/">
+        herdier
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/509/">
+        purrloin
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/510/">
+        liepard
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/511/">
+        pansage
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/512/">
+        simisage
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/513/">
+        pansear
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/520/">
+        tranquill
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/515/">
+        panpour
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/516/">
+        simipour
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/517/">
+        munna
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/518/">
+        musharna
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/519/">
+        pidove
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/527/">
+        woobat
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/521/">
+        unfezant
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/522/">
+        blitzle
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/523/">
+        zebstrika
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/524/">
+        roggenrola
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/525/">
+        boldore
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/526/">
+        gigalith
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/530/">
+        excadrill
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/528/">
+        swoobat
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/529/">
+        drilbur
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/531/">
+        audino
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/532/">
+        timburr
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/534/">
+        conkeldurr
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/535/">
+        tympole
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/536/">
+        palpitoad
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/538/">
+        throh
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/537/">
+        seismitoad
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/539/">
+        sawk
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/540/">
+        sewaddle
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/541/">
+        swadloon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/543/">
+        venipede
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/544/">
+        whirlipede
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/545/">
+        scolipede
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/546/">
+        cottonee
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/547/">
+        whimsicott
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/548/">
+        petilil
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/486/">
+        regigigas
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/549/">
+        lilligant
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/550/">
+        basculin-red-striped
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/551/">
+        sandile
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/552/">
+        krokorok
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/487/">
+        giratina-altered
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/490/">
+        manaphy
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/494/">
+        victini
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/493/">
+        arceus
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/492/">
+        shaymin-land
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/567/">
+        archeops
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/562/">
+        yamask
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/568/">
+        trubbish
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/563/">
+        cofagrigus
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/564/">
+        tirtouga
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/565/">
+        carracosta
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/566/">
+        archen
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/575/">
+        gothorita
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/570/">
+        zorua
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/574/">
+        gothita
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/571/">
+        zoroark
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/572/">
+        minccino
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/573/">
+        cinccino
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/576/">
+        gothitelle
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/581/">
+        swanna
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/577/">
+        solosis
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/578/">
+        duosion
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/579/">
+        reuniclus
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/582/">
+        vanillite
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/583/">
+        vanillish
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/585/">
+        deerling
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/584/">
+        vanilluxe
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/588/">
+        karrablast
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/586/">
+        sawsbuck
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/587/">
+        emolga
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/589/">
+        escavalier
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/591/">
+        amoonguss
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/592/">
+        frillish
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/590/">
+        foongus
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/593/">
+        jellicent
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/595/">
+        joltik
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/594/">
+        alomomola
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/596/">
+        galvantula
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/600/">
+        klang
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/597/">
+        ferroseed
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/599/">
+        klink
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/598/">
+        ferrothorn
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/602/">
+        tynamo
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/603/">
+        eelektrik
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/606/">
+        beheeyem
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/604/">
+        eelektross
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/607/">
+        litwick
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/605/">
+        elgyem
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/608/">
+        lampent
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/609/">
+        chandelure
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/610/">
+        axew
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/612/">
+        haxorus
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/613/">
+        cubchoo
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/614/">
+        beartic
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/615/">
+        cryogonal
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/616/">
+        shelmet
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/618/">
+        stunfisk
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/617/">
+        accelgor
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/619/">
+        mienfoo
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/620/">
+        mienshao
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/554/">
+        darumaka
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/555/">
+        darmanitan-standard
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/556/">
+        maractus
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/559/">
+        scraggy
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/557/">
+        dwebble
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/560/">
+        scrafty
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/558/">
+        crustle
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/561/">
+        sigilyph
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/629/">
+        vullaby
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/630/">
+        mandibuzz
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/631/">
+        heatmor
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/638/">
+        cobalion
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/633/">
+        deino
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/635/">
+        hydreigon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/636/">
+        larvesta
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/637/">
+        volcarona
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/655/">
+        delphox
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/642/">
+        thundurus-incarnate
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/639/">
+        terrakion
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/640/">
+        virizion
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/643/">
+        reshiram
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/644/">
+        zekrom
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/645/">
+        landorus-incarnate
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/646/">
+        kyurem
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/647/">
+        keldeo-ordinary
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/649/">
+        genesect
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/648/">
+        meloetta-aria
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/650/">
+        chespin
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/651/">
+        quilladin
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/652/">
+        chesnaught
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/662/">
+        fletchinder
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/653/">
+        fennekin
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/654/">
+        braixen
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/656/">
+        froakie
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/657/">
+        frogadier
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/665/">
+        spewpa
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/658/">
+        greninja
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/659/">
+        bunnelby
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/660/">
+        diggersby
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/661/">
+        fletchling
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/663/">
+        talonflame
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/667/">
+        litleo
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/664/">
+        scatterbug
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/666/">
+        vivillon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/671/">
+        florges
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/669/">
+        flabebe
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/674/">
+        pancham
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/670/">
+        floette
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/678/">
+        meowstic-male
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/672/">
+        skiddo
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/673/">
+        gogoat
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/676/">
+        furfrou
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/677/">
+        espurr
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/679/">
+        honedge
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/682/">
+        spritzee
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/680/">
+        doublade
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/681/">
+        aegislash
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/684/">
+        swirlix
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/683/">
+        aromatisse
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/625/">
+        bisharp
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/685/">
+        slurpuff
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/687/">
+        malamar
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/686/">
+        inkay
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/688/">
+        binacle
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/622/">
+        golett
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/623/">
+        golurk
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/624/">
+        pawniard
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/626/">
+        bouffalant
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/627/">
+        rufflet
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/628/">
+        braviary
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/632/">
+        durant
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/698/">
+        amaura
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/704/">
+        goomy
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/699/">
+        aurorus
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/707/">
+        klefki
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/700/">
+        sylveon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/706/">
+        goodra
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/701/">
+        hawlucha
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/702/">
+        dedenne
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/705/">
+        sliggoo
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/711/">
+        gourgeist-average
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/710/">
+        pumpkaboo-average
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/708/">
+        phantump
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/712/">
+        bergmite
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/709/">
+        trevenant
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/718/">
+        zygarde
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/713/">
+        avalugg
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/714/">
+        noibat
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/716/">
+        xerneas
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/715/">
+        noivern
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/717/">
+        yveltal
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10001/">
+        deoxys-attack
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10002/">
+        deoxys-defense
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/690/">
+        skrelp
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/692/">
+        clauncher
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10004/">
+        wormadam-sandy
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10003/">
+        deoxys-speed
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/696/">
+        tyrunt
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/703/">
+        carbink
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10008/">
+        rotom-heat
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10005/">
+        wormadam-trash
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10017/">
+        darmanitan-zen
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10010/">
+        rotom-frost
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10006/">
+        shaymin-sky
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10009/">
+        rotom-wash
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10011/">
+        rotom-fan
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10012/">
+        rotom-mow
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10013/">
+        castform-sunny
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10014/">
+        castform-rainy
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10016/">
+        basculin-blue-striped
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10019/">
+        tornadus-therian
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10018/">
+        meloetta-pirouette
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10023/">
+        kyurem-white
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10021/">
+        landorus-therian
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10020/">
+        thundurus-therian
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10022/">
+        kyurem-black
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10025/">
+        meowstic-female
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10028/">
+        pumpkaboo-large
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10024/">
+        keldeo-resolute
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10026/">
+        aegislash-blade
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10027/">
+        pumpkaboo-small
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10029/">
+        pumpkaboo-super
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/693/">
+        clawitzer
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10030/">
+        gourgeist-small
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10031/">
+        gourgeist-large
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10032/">
+        gourgeist-super
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10033/">
+        venusaur-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10034/">
+        charizard-mega-x
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10035/">
+        charizard-mega-y
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10036/">
+        blastoise-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10037/">
+        alakazam-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/695/">
+        heliolisk
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/697/">
+        tyrantrum
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/149/">
+        dragonite
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/141/">
+        kabutops
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/277/">
+        swellow
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/621/">
+        druddigon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/386/">
+        deoxys-normal
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/209/">
+        snubbull
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/292/">
+        shedinja
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/321/">
+        wailord
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/346/">
+        cradily
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/415/">
+        combee
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/413/">
+        wormadam-plant
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/484/">
+        palkia
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/611/">
+        fraxure
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/451/">
+        skorupi
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/641/">
+        tornadus-incarnate
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/675/">
+        pangoro
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10040/">
+        pinsir-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10042/">
+        aerodactyl-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10041/">
+        gyarados-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/1/">
+        bulbasaur
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10043/">
+        mewtwo-mega-x
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10047/">
+        heracross-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10044/">
+        mewtwo-mega-y
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10045/">
+        ampharos-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10046/">
+        scizor-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10048/">
+        houndoom-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10056/">
+        banette-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10049/">
+        tyranitar-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10050/">
+        blaziken-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10051/">
+        gardevoir-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10052/">
+        mawile-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10053/">
+        aggron-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10054/">
+        medicham-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10055/">
+        manectric-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10057/">
+        absol-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10058/">
+        garchomp-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10059/">
+        lucario-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10060/">
+        abomasnow-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/119/">
+        seaking
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/28/">
+        sandslash
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/35/">
+        clefairy
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/90/">
+        shellder
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/65/">
+        alakazam
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/208/">
+        steelix
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/180/">
+        flaaffy
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/248/">
+        tyranitar
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/357/">
+        tropius
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/422/">
+        shellos
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/482/">
+        azelf
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/485/">
+        heatran
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/514/">
+        simisear
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/553/">
+        krookodile
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/542/">
+        leavanny
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/580/">
+        ducklett
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/691/">
+        dragalge
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/689/">
+        barbaracle
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/694/">
+        helioptile
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10038/">
+        gengar-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10039/">
+        kangaskhan-mega
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/6/">
+        charizard
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/139/">
+        omastar
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/70/">
+        weepinbell
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10015/">
+        castform-snowy
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/79/">
+        slowpoke
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/533/">
+        gurdurr
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/400/">
+        bibarel
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/569/">
+        garbodor
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/601/">
+        klinklang
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/57/">
+        primeape
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/237/">
+        hitmontop
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/441/">
+        chatot
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/634/">
+        zweilous
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/465/">
+        tangrowth
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/105/">
+        marowak
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/668/">
+        pyroar
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/129/">
+        magikarp
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/167/">
+        spinarak
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/199/">
+        slowking
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/10007/">
+        giratina-origin
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/216/">
+        teddiursa
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/263/">
+        zigzagoon
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/488/">
+        cresselia
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/282/">
+        gardevoir
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/307/">
+        meditite
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/335/">
+        zangoose
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/373/">
+        salamence
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/489/">
+        phione
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/503/">
+        samurott
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/220/">
+        swinub
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/221/">
+        piloswine
+      </button>
+    </li>
+    <li>
+      <button class="js-show-pokemon btn btn-link" data-pokemon-uri="api/v1/pokemon/222/">
+        corsola
+      </button>
+    </li>
+</ul>
+
+
+<!-- Pokemon modal view (hidden at first) -->
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">
+          <span>×</span>
+        </button>
+
+        <h3 class="modal-title">
+          <span>Feraligtr</span>
+          <small>#160</small>
+        </h3>
+      </div><!-- .modal-header -->
+
+      <div class="modal-body">
+        <dl class="dl-horizontal">
+          <dt>Height</dt>
+          <dd>23</dd>
+
+          <dt>Weight</dt>
+          <dd>888</dd>
+        </dl>
+      </div><!-- .modal-body -->
+
+    </div><!-- .modal-content -->
+  </div><!-- .modal-dialog -->
+</div><!-- .modal -->
+
+
+
+
+</body></html>
