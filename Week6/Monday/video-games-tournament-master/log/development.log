@@ -336,3 +336,959 @@ Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
 
 Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 14:56:02 +0200
 Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-07-18 14:56:02 +0200
+Started GET "/" for 127.0.0.1 at 2016-07-18 17:00:10 +0200
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 285ms (Views: 284.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:00:11 +0200
+Processing by TournamentsController#index as JSON
+  Rendering tournaments/index.json.jbuilder
+  Rendered tournaments/index.json.jbuilder (3.2ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-07-18 17:00:11 +0200
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from require at bin/rails:4)
+  [1m[36mTournament Load (2.2ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/Flo/Ironhack/Week6/Monday/video-games-tournament-master/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from load at /Users/Flo/.rbenv/versions/2.3.0/bin/rake:23)
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "registrations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "tournaments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20160718123539')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES ('20160718122751'), ('20160718122852');
+
+[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-07-18 15:01:06 UTC], ["updated_at", 2016-07-18 15:01:06 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "players"[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "players" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE "registrations"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "registrations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE "tournaments"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "tournaments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Pokemon"], ["created_at", 2016-07-18 15:01:06 UTC], ["updated_at", 2016-07-18 15:01:06 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "MarioKart"], ["created_at", 2016-07-18 15:01:06 UTC], ["updated_at", 2016-07-18 15:01:06 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Flo"], ["created_at", 2016-07-18 15:01:06 UTC], ["updated_at", 2016-07-18 15:01:06 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Nikel"], ["created_at", 2016-07-18 15:01:06 UTC], ["updated_at", 2016-07-18 15:01:06 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jake"], ["created_at", 2016-07-18 15:01:06 UTC], ["updated_at", 2016-07-18 15:01:06 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Johannus"], ["created_at", 2016-07-18 15:01:06 UTC], ["updated_at", 2016-07-18 15:01:06 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Soy"], ["created_at", 2016-07-18 15:01:06 UTC], ["updated_at", 2016-07-18 15:01:06 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Miguel"], ["created_at", 2016-07-18 15:01:06 UTC], ["updated_at", 2016-07-18 15:01:06 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from require at bin/rails:4)
+  [1m[36mTournament Load (1.0ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+Started GET "/" for 127.0.0.1 at 2016-07-18 17:17:38 +0200
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 374ms (Views: 373.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/assets/tournaments.self-3a630de1ff7b516682afc08a0af8e11c879aeaad6b05f2869c453daafdd3c97c.css?body=1" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/assets/tournaments-index.self-8068560ff76e5e1dee68db09894e952867c162ee5e878c947213376180dacb80.js?body=1" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/assets/build-tourney-html.self-ad498f66a5be7bd61752052559cec3db8f612030f0769e16a0b2e8da7a5752fd.js?body=1" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Processing by TournamentsController#index as JSON
+  Rendering tournaments/index.json.jbuilder
+  Rendered tournaments/index.json.jbuilder (3.3ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-07-18 17:17:39 +0200
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:17:43 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:17:43 +0200
+Processing by TournamentsController#index as JSON
+  Rendering tournaments/index.json.jbuilder
+  Rendered tournaments/index.json.jbuilder (1.0ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-07-18 17:17:43 +0200
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:19:35 +0200
+Processing by TournamentsController#index as HTML
+  [1m[36mTournament Load (0.4ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 19ms (Views: 7.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 35ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournaments.self-3a630de1ff7b516682afc08a0af8e11c879aeaad6b05f2869c453daafdd3c97c.css?body=1" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Started GET "/assets/build-tourney-html.self-ad498f66a5be7bd61752052559cec3db8f612030f0769e16a0b2e8da7a5752fd.js?body=1" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Started GET "/assets/tournaments-index.self-8068560ff76e5e1dee68db09894e952867c162ee5e878c947213376180dacb80.js?body=1" for 127.0.0.1 at 2016-07-18 17:20:22 +0200
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:20:23 +0200
+Processing by TournamentsController#index as JSON
+  Rendering tournaments/index.json.jbuilder
+  Rendered tournaments/index.json.jbuilder (0.6ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-07-18 17:20:23 +0200
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:25:19 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/assets/tournaments.self-3a630de1ff7b516682afc08a0af8e11c879aeaad6b05f2869c453daafdd3c97c.css?body=1" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/assets/build-tourney-html.self-ad498f66a5be7bd61752052559cec3db8f612030f0769e16a0b2e8da7a5752fd.js?body=1" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/assets/tournaments-index.self-8068560ff76e5e1dee68db09894e952867c162ee5e878c947213376180dacb80.js?body=1" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/assets/tournaments.self-d8ac4eba90c65f43025ec5fba60840863af26310beecab62c6e2983dc07953f9.js?body=1" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Processing by TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-07-18 17:25:20 +0200
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:25:29 +0200
+Processing by TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:30:06 +0200
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:31:28 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 52ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:31:28 +0200
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:31:28 +0200
+Processing by TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-07-18 17:31:28 +0200
+Started POST "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:31:44 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/api/tournaments"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (22.2ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:33:14 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:33:14 +0200
+Processing by TournamentsController#index as JSON
+  [1m[36mTournament Load (0.4ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:33:14 +0200
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-07-18 17:33:14 +0200
+Started POST "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:33:18 +0200
+Processing by TournamentsController#index as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7VKoxCAY0Il4XUBMRQi3VKIsSCR/ZuxRV+W/onj78ObTSbsVU+mrgAfF58odzXY+Lx6rBV7SH9ReHgZFt41vwg==", "tournament"=>{"name"=>"FIFA"}}
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from require at bin/rails:4)
+  [1m[36mTournament Load (1.8ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:47:32 +0200
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/Flo/Ironhack/Week6/Monday/video-games-tournament-master/app/controllers/tournaments_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/tournaments_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.1ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.8ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (147.2ms)
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:47:44 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 217ms (Views: 208.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:47:45 +0200
+Processing by TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:47:45 +0200
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-07-18 17:47:45 +0200
+Started POST "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:47:54 +0200
+Processing by TournamentsController#add as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h7woDFyUKpgv5xp5in240StFamZm22ge0s62Qdu3rYe5pzvdL2VRkVB/vf/SuHm7pneJR0dvm5vbNQ+mFMEyow==", "tournament"=>{"name"=>"FIFA"}}
+No template found for TournamentsController#add, rendering head :no_content
+Completed 204 No Content in 74ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:47:57 +0200
+Processing by TournamentsController#add as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h7woDFyUKpgv5xp5in240StFamZm22ge0s62Qdu3rYe5pzvdL2VRkVB/vf/SuHm7pneJR0dvm5vbNQ+mFMEyow==", "tournament"=>{"name"=>"FIFA"}}
+No template found for TournamentsController#add, rendering head :no_content
+Completed 204 No Content in 69ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:48:08 +0200
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:48:26 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 56ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:48:26 +0200
+Processing by TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:48:26 +0200
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-07-18 17:48:26 +0200
+Started POST "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:48:32 +0200
+Processing by TournamentsController#add as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mNkbXKyKvUV4OIup+uKLo0859/S/WOpKyCVAYBPP+PSmwgiN33vGTAegLC+iJ0rJwgsU1Z7sGc/B3vmH3Lln0A==", "tournament"=>{"name"=>"sdiewewdbewd"}}
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 500 Internal Server Error in 62287ms (ActiveRecord: 0.2ms)
+
+
+  
+SystemExit (exit):
+  
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:49:34 +0200
+app/controllers/tournaments_controller.rb:18:in `add'
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (3.2ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (5.4ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (3.9ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (90.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+Processing by TournamentsController#index as HTML
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:49:35 +0200
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 374ms (Views: 323.5ms | ActiveRecord: 0.0ms)
+
+
+Processing by TournamentsController#index as HTML
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:49:36 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (16.3ms)
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 467ms (Views: 411.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 591ms (Views: 556.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:49:36 +0200
+Processing by TournamentsController#index as JSON
+  [1m[36mTournament Load (0.7ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 69ms (Views: 56.3ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:49:36 +0200
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-07-18 17:49:37 +0200
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:49:52 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 316ms (Views: 309.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:49:52 +0200
+Processing by TournamentsController#index as JSON
+  [1m[36mTournament Load (1.4ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 49ms (Views: 40.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:49:52 +0200
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-07-18 17:49:52 +0200
+Started GET "/tournaments/1" for 127.0.0.1 at 2016-07-18 17:49:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/tournaments/1"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.6ms)
+  Rendered collection of /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (23.6ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (33.7ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.4ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (194.0ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.0ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.0ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (101.3ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.6ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.2ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (196.7ms)
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:49:57 +0200
+Started POST "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:50:00 +0200
+Processing by TournamentsController#add as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QVR5Xsco9/r6ghKV0BNm80A+G7NZPwI78wREnAZTE0Z/T2qPtNmM84UatROI1qeZzQz4kniL8b76//17ySWMYg==", "tournament"=>{"name"=>"33rffrfr"}}
+No template found for TournamentsController#add, rendering head :no_content
+Completed 204 No Content in 93ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:50:05 +0200
+Processing by TournamentsController#add as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QVR5Xsco9/r6ghKV0BNm80A+G7NZPwI78wREnAZTE0Z/T2qPtNmM84UatROI1qeZzQz4kniL8b76//17ySWMYg==", "tournament"=>{"name"=>"33rffrfr"}}
+No template found for TournamentsController#add, rendering head :no_content
+Completed 204 No Content in 82ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:52:51 +0200
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.0) lib/action_dispatch/http/request.rb:93:in `controller_class'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (33.3ms)
+  Rendered collection of /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (45.2ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.0ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.3ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (221.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.9ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (7.7ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.9ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (103.0ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.4ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.4ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (215.7ms)
+Started GET "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:53:40 +0200
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.0) lib/action_dispatch/http/request.rb:93:in `controller_class'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (3.3ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.6ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.9ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.5ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.7ms)
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:53:42 +0200
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:53:46 +0200
+Started GET "/" for 127.0.0.1 at 2016-07-18 17:53:47 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 69ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:53:47 +0200
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.0) lib/action_dispatch/http/request.rb:93:in `controller_class'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:53:47 +0200
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (39.7ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+Started GET "/" for 127.0.0.1 at 2016-07-18 17:53:50 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:53:51 +0200
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:53:51 +0200
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.0) lib/action_dispatch/http/request.rb:93:in `controller_class'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (30.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+Started GET "/" for 127.0.0.1 at 2016-07-18 17:53:52 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:53:52 +0200
+  
+ActionController::RoutingError (uninitialized constant Api):
+  
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.0) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.0) lib/action_dispatch/http/request.rb:93:in `controller_class'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/Users/Flo/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:53:52 +0200
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (3.1ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (44.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+Started GET "/" for 127.0.0.1 at 2016-07-18 17:58:59 +0200
+  
+SyntaxError (/Users/Flo/Ironhack/Week6/Monday/video-games-tournament-master/app/controllers/tournaments_controller.rb:19: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/tournaments_controller.rb:19: syntax error, unexpected keyword_end, expecting end-of-input
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.8ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.6ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.9ms)
+Started GET "/" for 127.0.0.1 at 2016-07-18 17:59:09 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 36ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2016-07-18 17:59:09 +0200
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 17:59:10 +0200
+Processing by TournamentsController#index as JSON
+  [1m[36mTournament Load (0.3ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-07-18 17:59:10 +0200
+Started POST "/api/tournaments" for 127.0.0.1 at 2016-07-18 17:59:13 +0200
+Processing by TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vHDN6EaIXOhPyBKRkUSxgalrQtO9gkk5rword9/9kwqCa945NXkn4TBQtRfJgXDrJFmh8pw2urym8ZKQEIsMLg==", "tournament"=>{"name"=>"jwenefef"}}
+Started GET "/" for 127.0.0.1 at 2016-07-18 18:05:40 +0200
+Completed 500 Internal Server Error in 386569ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/tournaments_controller.rb:14:in `create'
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (3.7ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (5.0ms)
+  Rendering /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (6.3ms)
+  Rendered /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (112.1ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/http/mime_type.rb:52)
+Started GET "/" for 127.0.0.1 at 2016-07-18 18:05:41 +0200
+Started GET "/" for 127.0.0.1 at 2016-07-18 18:05:41 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 483ms (Views: 421.2ms | ActiveRecord: 0.0ms)
+
+
+Processing by TournamentsController#index as HTML
+Processing by TournamentsController#index as HTML
+Started GET "/" for 127.0.0.1 at 2016-07-18 18:05:52 +0200
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (8.6ms)
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (7.2ms)
+  Rendered tournaments/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 791ms (Views: 781.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 906ms (Views: 825.9ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 934ms (Views: 871.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-18 18:06:02 +0200
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/Flo/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TournamentsController#index as HTML
+  Rendering tournaments/index.html.erb within layouts/application
+  Rendered tournaments/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 248ms (Views: 240.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/tournaments.json" for 127.0.0.1 at 2016-07-18 18:06:03 +0200
+Processing by TournamentsController#index as JSON
+  [1m[36mTournament Load (0.2ms)[0m  [1m[34mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-07-18 18:06:03 +0200
+Started POST "/api/tournaments" for 127.0.0.1 at 2016-07-18 18:06:11 +0200
+Processing by TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pp+JoejEfowHYgK38smqsjbO0Xqxc4w/jhM/ABKfhRKYhJpwmzUFhXj6pTGqDGvYu/wyW5DHf7qH6Ibn3ekaNg==", "tournament"=>{"name"=>"Fifa"}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Fifa"], ["created_at", 2016-07-18 16:06:11 UTC], ["updated_at", 2016-07-18 16:06:11 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 9ms (Views: 0.4ms | ActiveRecord: 1.4ms)
+
+
